@@ -1,0 +1,13 @@
+# Conda environment for TermPaint.
+# Create with:  conda env create -f environment.yml
+# Activate with: conda activate termpaint
+name: termpaint
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.26      # block averaging / luminance math
+  - pillow>=10.0     # image decoding (png, jpg, bmp, gif, ...)
+  - pytest>=8.0      # test suite in tests/
+  - nasm>=2.16       # assembler for the NASM port
+  - binutils         # provides `ld` to link the NASM object files
